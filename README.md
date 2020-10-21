@@ -66,3 +66,39 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+PROJECT NAME : NetFlix Clone
+
+TOOLS USED : React JS,Firebase,axios,react-youtube,movie-trailer
+
+CREATE PROJECT : npx create-react-app netflix-clone
+
+DELETE UNWANTED STUFFS FROM PROJECT FOLDER : Delete unwanted files and thier dependencies
+delete app.test.js,logo.svg,setuptests.js and delete that dependencies in App.js as well
+
+3rd PARTY PLUGIN
+
+	Install axios(For API calls)
+		npm i axios
+
+	Install react youtube(For embedd youtube into appliction)
+		npm i react-youtube
+
+	Install movie-trailer(For search youtube trailer)
+		npm i movie-trailer
+
+DATABASE & DEPLOYMENT
+	> npm i firebase
+	> npm install -g firebase-tools
+	> login to gmail -> search for firebase -> choose account -> go to console -> create a project -> go to project setting -> grab the config file -> create firebase.js file in your application -> paste it
+	> firebase login
+	> firebase init
+	> Hosting -> Use Exiting project -> (pick the project name)
+	> instead of public give build
+	> Single page application? -> y
+	> npm run build(in future any chnages in the code means we have to use this again)
+	> firebase deploy
+
+Note: npm i firebase (If not working try this and continue npm cache clean --force)
