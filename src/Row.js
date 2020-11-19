@@ -20,8 +20,8 @@ function Row({ title, fetchUrl, isLargeRow }) {
   }, [fetchUrl]);
 
   const opts = {
-    height: "390",
-    width: "100%",
+    height: "500px",
+    width: "500px",
     playerVars: {
       autoplay: 1,
     },
@@ -45,7 +45,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
       <h2>{title}</h2>
       <div className="row__posters">
         {movies.map((movie) => (
-          <img
+          (movie.poster_path && <img
             key={movie.id}
             onClick={() => handleClick(movie)}
             className={`row__poster ${isLargeRow && "row__posterLarge"}`}
@@ -54,7 +54,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
             }`}
             alt={movie.name}
             name={movie.name}
-          />
+          />)
         ))}
       </div>
       {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}

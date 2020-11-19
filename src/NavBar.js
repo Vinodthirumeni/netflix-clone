@@ -25,7 +25,7 @@ function NavBar() {
 
       <img
         className="nav__avatar"
-        src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png"
+        src="https://lh3.googleusercontent.com/ogw/ADGmqu8Fxmeu3PTD6yjwQ-WKVxD8WZCua6v5RdUXtqzx5Q=s32-c-mo"
         alt="Netflix Avatar"
       />
     </div>
